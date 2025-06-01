@@ -6,6 +6,10 @@ The camera stream can be viewed in a HomeKit app. For example my [Home+](https:/
 
 <img alt="Camera Stream" src="_img/home-app-camera.jpeg?raw=true" width="400" />
 
+## Goal of the fork
+
+While I have nothing achieved yer, I want to get this to work pm Bookworm with a Raspi Cam v2.1, which needs dabbling around with loopback and the ffmpeg commands, perhaps switching in rpi-cam execs.
+
 ## Features
 
 - Live streaming via HomeKit
