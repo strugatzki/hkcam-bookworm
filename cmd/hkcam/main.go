@@ -56,7 +56,8 @@ func main() {
 	if runtime.GOOS == "linux" {
 		inputDevice = flag.String("input_device", "v4l2", "video input device")
 		inputFilename = flag.String("input_filename", "/dev/video0", "video input device filename")
-		loopbackFilename = flag.String("loopback_filename", "/dev/video99", "video loopback device filename")
+		// removed video99 from the following line because this empty filename seems to defined if mulit-stream is used, not the flag
+		loopbackFilename = flag.String("loopback_filename", "", "video loopback device filename")
 		h264Decoder = flag.String("h264_decoder", "", "h264 video decoder")
 		h264Encoder = flag.String("h264_encoder", "h264_v4l2m2m", "h264 video encoder")
 	} else if runtime.GOOS == "darwin" { // macOS
